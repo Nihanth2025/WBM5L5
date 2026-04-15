@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>JavaScript async/ await</h2>
+    <h1 id="result"></h1>
+
+    <script>
+        async function product(a, b) {
+            let response = await a * b;
+            display(response);
+        }
+
+        function display(mul) {
+            document.getElementById("result").innerHTML = mul;
+        }
+
+        product(2, 5)
+    </script>
+</body>
+</html>
